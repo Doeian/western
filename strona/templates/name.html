@@ -1,0 +1,15 @@
+{{ student.first_name }}{{student.last_name  }}<br>
+Klasa: {{ student.school_class }}
+
+
+
+
+<ul>
+    {% for subject in subjects %}
+    <li>
+        <a href='/grades/{{ student.id }}/{{ subject.id }}'>{{ subject.name }}</a>
+    </li>
+        {% empty %}
+        no i dupa
+    {% endfor %}
+</ul>

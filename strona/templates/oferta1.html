@@ -1,0 +1,25 @@
+
+<!doctype html>
+
+<html>
+    <head>
+    <body bgcolor="silver">
+Kilka przykładowych ofert:
+<br>
+<br>
+{% for oferta1 in oferta %}
+    <br>
+    <br>
+Nazwa Oferty:  {{ oferta1.nazwa_oferty }}<br><br>
+Czas Trfania Oferty:  {{ oferta1.czas_oferty }}<br><br>
+Koszty Oferty za Osobe:  {{ oferta1.koszt_oferty }}<br><br>
+Maksymalna ilosc osob:  {{ oferta1.maksymalna_ilość_osob }}<br><br>
+{% endfor %}
+
+
+
+
+    </body>
+</html>
+
+

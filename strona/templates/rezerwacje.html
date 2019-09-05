@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+    <head>
+    <body bgcolor="silver">
+
+
+Rezerwacje:
+<br>
+<br>
+{% for rezerwacja_hotel in rezerwacja %}
+    <br>
+    <br>
+Ilość pokoi:  {{ rezerwacja_hotel.ilosc_pokoi }}
+    <br>
+Ilość miejsc w pokoju:  {{ rezerwacja_hotel.ilosc_miejsc }}
+    <br>
+Nazwa pokoju:  {{ rezerwacja_hotel.nazwa_pokoju }}
+{% endfor %}
+​
+​
+​
+
+    </body>
+</html>
+
+
+
+​
+​

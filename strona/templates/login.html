@@ -1,0 +1,15 @@
+<html>
+    <head>
+    <body bgcolor="silver">
+<form method="POST">
+    <h1 style="text-align: center">
+    Logowanie:
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Get me in">
+    </h1>
+</form>
+    </body>
+</html>
+
+

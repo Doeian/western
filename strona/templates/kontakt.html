@@ -1,0 +1,26 @@
+
+
+<!doctype html>
+
+<html>
+    <head>
+    <body bgcolor="silver">
+
+Informacje Kontaktowe:
+<br>
+<br>
+
+{% for kontakt1 in kontakt %}
+    <br>
+Nazwa Firmy:  {{ kontakt1.nazwa_firmy }}
+    <br>
+    <br>
+Numery kontaktowe:  {{ kontakt1.numer_telefonu }}
+{% endfor %}
+
+
+
+    </body>
+</html>
+
+

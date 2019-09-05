@@ -1,0 +1,16 @@
+<head>
+    <body bgcolor="silver">
+Wydarzenie:
+
+{% for wydarzenia in wydarzenia1 %}
+Nazwa wydarzenia: {{ wydarzenia.nazwa_wydarzenia }}
+<br>
+Data wydarzenia: {{ wydarzenia.data_wydarzenia }}
+<br>
+
+Miejsce wydarzenia: {{ wydarzenia.miejsce_wydarzenia }}
+<br>
+Opis wydarzenia: {{ wydarzenia.opis_wydarzenia }}
+{% endfor %}
+    </body>
+
