@@ -87,3 +87,15 @@ class konrtaktmodView(View):
 
     def get(self, request):
         return render(request, 'modykontakt.html')
+
+
+class rejestracjeView(View):
+
+    def get(self, request):
+        return render(request, 'rejestracja.html')
+
+
+class hotelpageView(View):
+
+    def get(self, request):
+        return render(request, 'hotel.html')

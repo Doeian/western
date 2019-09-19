@@ -1,42 +1,49 @@
 <!doctype html>
 
 <html>
-    <head>
-        <button><a href ='/logowanie/'>Zaloguj</a></button>
-        <button><a href ='/kontakt/'>Kontakt</a></button>
-        <button><a href ='/oferta/'>Oferta</a></button>
-        <button><a href ='/rezerwacje'>Wolne Rezerwacje</a></button>
-        <button><a href ='/wydarzenia1/'>Wydarzenia</a></button>
-
-
-        {% load static %}
+<head>
+ {% load static %}
+        <link rel="stylesheet" href="{% static 'menu.css' %}">
+<nav class="nav">
+	<ul>
+		<li><a href="hotel/">Hotel</a>
+    <li><a href="kontakt/">Kontakt</a>
+        <li><a href="oferta/">oferta</a>
+		<li class="drop"><a href="logowanie/">zaloguj</a>
+        <li><a href="rejestracja/">Zarejestruj sie</a>
+		</li>
+	</ul>
+</nav>
+            <body bgcolor="#a9a9a9">
         <br>
         <br>
-        <h1 style="text-align: center">Hotel Restauracja WESTERN</h1>
-        <h style="text-align: center">
-    <body bgcolor="#a9a9a9">
-    <img src = '{% static "western.jpeg" %}'>
-    <img src = '{% static "western2.jpeg" %}'>
-    <img src = '{% static "western3.jpeg" %}'>
-    <img src = '{% static "western4.jpeg" %}'>
-        </hstyle>
-        <h2></h2>
-        <ul>
+            <h1 style="text-align: center">Hotel Restauracja WESTERN</h1>
+            <h2 style="text-align: center">
+                {% load static %}
+
+            <img src = '{% static "western.jpeg" %}'>
+            <img src = '{% static "western2.jpeg" %}'>
+            <img src = '{% static "western3.jpeg" %}'>
+            <img src = '{% static "western4.jpeg" %}'>
+            </h2>
+
+            <ul>
         <br>
         <iframe width="200" height="150" src="https://www.youtube.com/embed/i6J1nOTjQak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.5524535925833!2d18.102413950983372!3d53.20794219267237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703174b63e09405%3A0xeac4802de951d76e!2sWestern%20Hotel%20i%20Restauracja!5e0!3m2!1spl!2spl!4v1567508123218!5m2!1spl!2spl" width="200" height="150" frameborder="0" style="border:0; float: left " allowfullscreen=""></iframe>
         <br>
         <br>
         <br>
-<FORM NAME="jezyk">
-<SELECT NAME="dest" SIZE=1>
-<OPTION SELECTED VALUE="a.htm">Polski
-<OPTION VALUE="b.htm">chinski
-<OPTION VALUE="c.htm">Angielski
-<OPTION VALUE="d.htm">Hiszpanski
-</SELECT>
-<INPUT TYPE="BUTTON" VALUE="zmien" onClick="leapto(this.form)">
-</FORM>
+        <FORM NAME="jezyk">
+        <SELECT NAME="dest" SIZE=1>
+        <OPTION SELECTED VALUE="a.htm">Polski
+        <OPTION VALUE="b.htm">chinski
+        <OPTION VALUE="c.htm">Angielski
+        <OPTION VALUE="d.htm">Hiszpanski
+        </SELECT>
+        <INPUT TYPE="BUTTON" VALUE="zmien" onClick="leapto(this.form)">
+        </FORM>
          </ul>
     </body>
 </html>
+

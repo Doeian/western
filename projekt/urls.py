@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from strona.views import MenuView, KontaktView, OfertaView, RezerView, wydarzenieView, RenderLoginPageView, modyfikacja_wydarzeniaView, zarzadzanie_strnaView, modyfikacjaofertyView, modyfikacjarezerwView, konrtaktmodView
+from strona.views import MenuView, KontaktView, OfertaView, RezerView, wydarzenieView, RenderLoginPageView, modyfikacja_wydarzeniaView, zarzadzanie_strnaView, modyfikacjaofertyView, modyfikacjarezerwView, konrtaktmodView, rejestracjeView, hotelpageView
 
 urlpatterns = [
 
@@ -42,5 +42,9 @@ urlpatterns = [
 
     url(r'rezerwacjemod/', modyfikacjarezerwView.as_view()),
 
-    url(r'modykontakt1/', konrtaktmodView.as_view())
+    url(r'modykontakt1/', konrtaktmodView.as_view()),
+
+    url(r'rejestracja/', rejestracjeView.as_view()),
+
+    url(r'hotel/', hotelpageView.as_view())
     ]
